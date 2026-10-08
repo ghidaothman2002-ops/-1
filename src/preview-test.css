@@ -1,0 +1,19 @@
+html, body, #root { margin: 0; min-height: 100%; }
+body { background: #eee7df; }
+.preview-test {
+  min-height: 100vh;
+  min-height: 100svh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: #eee7df;
+  color: #43562a;
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.preview-test h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 80px);
+  line-height: 1.6;
+}
