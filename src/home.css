@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Saudi Original';
+  src: url('../public/fonts/SaudiWeb-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Saudi Original';
+  src: url('../public/fonts/SaudiWeb-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* All overrides are confined to the homepage; other routes keep their styles. */
+.home-page { width: 82%; }
+.home-page main,
+.home-page .header,
+.home-page footer,
+.home-page .mobile-nav { font-family: 'Saudi Original', sans-serif; }
+.home-page .header { height: 96px; padding: 20px 8%; }
+.home-page .desktop-nav,
+.home-page .demo-banner { display: none; }
+.home-page .logo { width: 40px; height: auto; mix-blend-mode: normal; }
+.home-page .header-actions { gap: 12px; }
+.home-page .header-actions .button { min-height: 30px; padding: 3px 26px; }
+.home-page .hero { height: auto; aspect-ratio: 1.84; padding: 0 8% 9%; }
+.home-page .hero h1 { font-family: 'Saudi Original', sans-serif; font-size: 32px; font-weight: 700; }
+.home-page .hero-nav { font-size: 14px; gap: 28px; }
+.home-page .hero p { font-size: 15px; margin-bottom: 22px; }
+.home-page .about { min-height: 265px; padding: 32px 8% 35px; gap: 50px; }
+.home-page .about-copy { max-width: 500px; }
+.home-page .about-original-wordmark { margin-bottom: 20px; line-height: 1; }
+.home-page .about-original-wordmark img { display: block; width: 115px; height: auto; }
+.home-page .about p { font-size: 20px; line-height: 1.6; }
+.home-page .saudi-map { flex-basis: 190px; height: 200px; }
+.home-page .experiences { padding: 17px 11% 19px; }
+.home-page .experiences>h2 { font-size: 29px; margin-bottom: 28px; }
+.home-page .experience-track { gap: 45px; }
+.home-page .experience-track .experience-card { flex-basis: calc((100% - 90px)/3); }
+.home-page .experience-card>img { height: 150px; }
+.home-page .experience-info { min-height: 108px; padding: 25px 20px 15px; }
+.home-page .experience-info h3 { font-size: 18px; }
+.home-page .how { padding: 55px 10% 18px; }
+.home-page .how h2 { font-size: 29px; margin-bottom: 42px; }
+.home-page .step-number { width: 70px; height: 70px; font-family: 'Saudi Original', sans-serif; font-size: 36px; }
+.home-page .steps h3 { font-size: 22px; }
+.home-page .farms { padding: 12px 8% 35px; }
+.home-page .farms>h2 { font-size: 36px; }
+.home-page .farm-card>img { height: 145px; }
+.home-page .farm-info h3 { font-size: 19px; }
+.home-page footer { padding: 145px 7% 42px; }
+.home-page .footer-top { justify-content: space-between; gap: 30px; }
+.home-page .original-wordmark { display: block; flex-shrink: 0; }
+.home-page .original-wordmark img { display: block; width: 170px; height: auto; }
+.home-page .footer-top nav { gap: 28px; font-size: 15px; }
+@media(min-width:1200px) {
+  .home-page .hero h1 { font-size: 38px; }
+  .home-page .experience-card>img { height: 180px; }
+  .home-page .farm-card>img { height: 175px; }
+}
+@media(max-width:650px) {
+  .home-page { width: 100%; }
+  .home-page .header { height: 88px; padding: 16px 6%; }
+  .home-page .hero { height: 370px; aspect-ratio: auto; padding: 0 5% 12%; }
+  .home-page .hero h1 { font-size: 29px; }
+  .home-page .about { padding: 30px 7%; gap: 16px; }
+  .home-page .about p { font-size: 18px; }
+  .home-page .about-original-wordmark img { width: 105px; }
+  .home-page .saudi-map { flex-basis: 115px; height: 160px; }
+  .home-page .experiences { padding: 25px 5%; }
+  .home-page .experience-track { gap: 15px; }
+  .home-page .experience-track .experience-card { flex-basis: 70%; }
+  .home-page .experience-card>img { height: 210px; }
+  .home-page .experience-info h3 { font-size: 23px; }
+  .home-page .how { padding: 38px 5% 25px; }
+  .home-page .how h2 { margin-bottom: 28px; }
+  .home-page .step-number { width: 64px; height: 64px; font-size: 30px; }
+  .home-page .farms { padding: 10px 6% 35px; }
+  .home-page .farm-card>img { height: 185px; }
+  .home-page footer { padding: 70px 7% 30px; }
+  .home-page .footer-top { justify-content: center; }
+  .home-page .footer-top nav { gap: 22px; }
+  .home-page .original-wordmark img { width: 150px; }
+}
