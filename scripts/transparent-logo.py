@@ -1,4 +1,9 @@
-"""Remove the white matte without resizing or redrawing the original logos.
+"""Historical helper; do NOT run against the current user-supplied logos.
+
+The active logo files are the user's final transparent originals.
+This script records the superseded automatic white-matte removal only.
+
+Remove the white matte without resizing or redrawing the original logos.
 
 Opaque artwork colors stay unchanged. Antialiased edge pixels are uncomposited
 from white so they retain coverage without a white halo on beige/dark surfaces.
