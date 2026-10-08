@@ -6,6 +6,7 @@ const previewHost = process.env.MIN_HUNA_PREVIEW_HOST?.trim();
 const allowedHosts = previewHost ? [previewHost] : [];
 
 export default defineConfig({
+  base: '/-1/',
   server: {
     host: '0.0.0.0',
     port: 5173,

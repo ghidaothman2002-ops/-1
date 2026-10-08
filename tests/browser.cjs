@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 (async () => {
  const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH ? {executablePath:process.env.CHROMIUM_PATH} : {}),args:['--no-sandbox']});
  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
- const base=process.env.TEST_URL||'http://127.0.0.1:5173/';
+ const base=process.env.TEST_URL||'http://127.0.0.1:5173/-1/';
  async function visit(path='/'){await page.goto(base+'#'+path);await page.waitForTimeout(150)}
  try {
   await page.setViewportSize({width:1280,height:900});await visit();await page.getByRole('heading',{name:'اكتشف السعودية من أهلها',exact:true}).waitFor();
